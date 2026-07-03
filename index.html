@@ -2,18 +2,129 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width='device-width', initial-scale=1.0">
-    <title>blog siqueira</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Siqueira - Cuidados Automotivos</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* AJUSTE AQUI: Fotos dos posts agora estão mais quadradas e centralizadas */
+        .post-img {
+            display: block;
+            width: 100%;
+            max-width: 400px; /* Limita a largura para ficar quadrada */
+            height: 350px;    /* Altura proporcional para manter o formato */
+            object-fit: cover;
+            border-radius: 6px;
+            margin: 0 auto 20px auto; /* Centraliza a foto no meio do post */
+        }
+        .avatar-img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 10px;
+            display: block;
+        }
+    </style>
 </head>
 <body>
-  <header>
- <h1>blog siqueira</h1>    
-<p>dicas para cuidar do seu carro</p> 
-  </header>
-  <main>
-<h2>dicas de ouro para cuidar da lataria e interna do seu carro</h2>
-<p>post</p>
-</main>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="logo">Blog Siqueira</a>
+            <ul class="nav-links">
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Lataria</a></li>
+                <li><a href="#">Mecânica</a></li>
+                <li><a href="#">Sobre</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="main-header">
+        <h1>Dicas para Cuidar do Seu Carro</h1>
+        <p>O guia definitivo para quem ama motores e quer valorizar seu veículo.</p>
+    </header>
+
+    <div class="container">
+        
+        <main class="content">
+            
+            <article class="post">
+                <h2 class="post-title">Segredos da Estética: Funilaria, Pintura e Polimento Automotivo</h2>
+                <p class="post-meta">Publicado em 3 de Julho de 2026 por Siqueira</p>
+                
+                <img src="https://images.unsplash.com/photo-1619642751034-765dfdf7c58e?w=800" alt="Polimento de carro" class="post-img">
+
+                <p>A lataria é o cartão de visitas do seu carro. Pequenos arranhões, queimaduras de sol ou amassados tiram o brilho do veículo e desvalorizam o preço de mercado. Veja como cuidar e proteger a pintura do seu xodó:</p>
+                
+                <ul class="dicas-lista">
+                    <li><strong>Polimento não é lavagem:</strong> O polimento remove uma microcamada do verniz para eliminar riscos superficiais. Por isso, só deve ser feito quando a pintura estiver realmente opaca ou riscada (no máximo 1 ou 2 vezes ao ano).</li>
+                    <li><strong>Cuidado com dejetos de pássaros:</strong> O cocô de passarinho é altamente ácido e pode queimar a pintura e o verniz em poucas horas sob o sol. Se notar a sujeira, remova imediatamente com água e um pano de microfibra úmido.</li>
+                    <li><strong>Funilaria preventiva:</strong> Se o carro sofreu um pequeno estalo de pedra na estrada que arrancou a tinta, cubra o ponto com um retoque de tinta ou verniz para evitar ferrugem.</li>
+                    <li><strong>Espelhamento vs. Vitrificação:</strong> Enquanto o espelhamento cria uma camada de brilho usando ceras especiais, a vitrificação aplica uma película de vidro líquido de alta proteção.</li>
+                </ul>
+            </article>
+
+            <article class="post">
+                <h2 class="post-title">Dicas de ouro para cuidar da lataria e interna do seu carro</h2>
+                <p class="post-meta">Publicado em 3 de Julho de 2026 por Siqueira</p>
+                
+                <img src="https://images.unsplash.com/photo-1607860108855-64acf2078ed9?w=800" alt="Lavagem de carro" class="post-img">
+
+                <p>Manter o carro limpo e bem cuidado valoriza o veículo na hora da revenda e garante o prazer de dirigir no dia a dia. Separamos algumas dicas fundamentais:</p>
+                
+                <ul class="dicas-lista">
+                    <li><strong>Evite o sol forte:</strong> Nunca lave ou aplique cera no carro sob o sol direto para não manchar a pintura.</li>
+                    <li><strong>Dois baldes na lavagem:</strong> Use um balde com shampoo automotivo e outro apenas com água limpa para enxaguar a esponja.</li>
+                </ul>
+            </article>
+
+            <article class="post">
+                <h2 class="post-title">Como proteger o motor durante o inverno?</h2>
+                <p class="post-meta">Publicado em 1 de Julho de 2026 por Siqueira</p>
+                
+                <img src="https://images.unsplash.com/photo-1486006920555-c77dce18193b?w=800" alt="Motor de carro" class="post-img">
+
+                <p>O frio exige mais da bateria e do sistema de partida do seu carro. Fique atento a esses pontos para não ficar na mão:</p>
+                
+                <ul class="dicas-lista">
+                    <li><strong>Água do radiador:</strong> Use sempre a proporção correta de aditivo (etilenoglicol) para evitar o congelamento ou superaquecimento.</li>
+                    <li><strong>Bateria:</strong> Teste a carga da bateria antes do início da temporada de frio intenso.</li>
+                </ul>
+            </article>
+
+            <section class="comments-section">
+                <h3>Deixe um Comentário</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Seu Nome" required>
+                    <textarea placeholder="Digite seu comentário aqui..." rows="4" required></textarea>
+                    <button type="submit">Enviar Comentário</button>
+                </form>
+            </section>
+
+        </main>
+
+        <aside class="sidebar">
+            <div class="sidebar-widget">
+                <h3>Sobre o Autor</h3>
+                <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150" alt="Foto do Autor" class="avatar-img">
+                <p>Apaixonado por carros, mecânica e estética automotiva. Compartilhando conhecimento para ajudar você a cuidar da sua máquina.</p>
+            </div>
+            <div class="sidebar-widget">
+                <h3>Categorias</h3>
+                <ul>
+                    <li><a href="#">Pintura e Polimento</a></li>
+                    <li><a href="#">Manutenção Preventiva</a></li>
+                    <li><a href="#">Higienização Interna</a></li>
+                </ul>
+            </div>
+        </aside>
+
+    </div>
+
+    <footer class="main-footer">
+        <p>&copy; 2026 Blog Siqueira. Todos os direitos reservados.</p>
+    </footer>
 
 </body>
 </html>
